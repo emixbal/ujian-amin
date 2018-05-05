@@ -7,7 +7,7 @@ const initialState = {
 const testiReducer = ( state = initialState, action) => {
 	switch(action.type){
 		case "ALL_TESTI_PENDING":
-			return {...state, isLoading: true}
+			return {...state, isLoading: true};
 		case "ALL_TESTI_FULFILLED":
 			return {...state, isLoading: false, testi: action.payload.data};
 		case "ALL_TESTI_REJECTED":
