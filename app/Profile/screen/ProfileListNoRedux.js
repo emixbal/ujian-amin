@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View, Image } from 'react-native';
 import { 
 	Container, Content, Body, Text, Header, Left, Right, Icon, 
 	Card, CardItem, Thumbnail, Button, List, ListItem
@@ -27,6 +27,7 @@ export default class ProfileList extends Component{
 		return(
 			<Container>
 				<Content>
+					<Image style={{height: 150}} source={require('../image/kyo.jpg')} />
 					<Card>
 			            <CardItem>
 			              <Body>
