@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View, Image } from 'react-native';
 import { 
 	Container, Content, Body, Text, Header, Left, Right, Icon, 
 	Card, CardItem, Thumbnail, Button, List, ListItem, Spinner
@@ -25,6 +25,7 @@ class ProfileList extends Component{
 		return(
 			<Container>
 				<Content>
+					<Image style={{height: 150}} source={require('../image/kyo.jpg')} />
 					<Card>
 			            <CardItem>
 			              {
@@ -42,7 +43,7 @@ class ProfileList extends Component{
 						                	<Text style={{marginLeft: 100}}>{items.name}</Text>
 						                	<Text style={{fontSize: 10, marginLeft: 70,}}>{items.position}</Text>
 						                	<Text note style={{fontSize: 10, marginLeft: 75}}>{items.school}</Text>
-						                	<Text note style={{fontSize: 10, marginLeft: 75}}>{items.address} 500+</Text>
+						                	<Text note style={{fontSize: 10, marginLeft: 75}}>{items.address}</Text>
 						                </Content>
 						                <Row style={{marginLeft: 55, marginTop: 20}}>
 
